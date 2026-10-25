@@ -15,6 +15,7 @@ name="Bhavya"
 age=38
 city="Frisco"
 
-echo "My name is $name, I am $age years old and I live in $city."
+echo "My name is $1, I am $age years old and I live in $city."
 
 echo "Years until 60: "$((60-$age))""
+
