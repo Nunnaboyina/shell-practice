@@ -11,10 +11,12 @@ if [ -z $number ] || [ $number <= 1 ]; then
     exit 1
 else
     echo "$number is not prime"
+    exit 1
 fi
 
 if [ $number = 2 ]; then 
     echo "$number is prime"
+    exit 0
 fi
 
 if [ $(($number % 2)) -eq 0 ] || [ $(($number % 3)) -eq 0 ] || [ $(($number % 5)) -eq 0 ] || [ $(($number % 7)) -eq 0 ]; then
