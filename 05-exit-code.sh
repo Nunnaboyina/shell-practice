@@ -19,10 +19,6 @@ fi
 ls /tmp 
 loop
 
-
-ls /fakedir
-loop
-
 ping -c1 google.com
 if [ $? -eq 0 ]; then 
     echo "Host Reachable"
@@ -30,6 +26,10 @@ else
     echo "Host not Reachable"
     exit 1
 fi
+
+
+ls /fakedir
+loop
 
 exit 0
 
