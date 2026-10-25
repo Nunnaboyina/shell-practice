@@ -6,11 +6,11 @@
 # Prints the result
 
 
-if [[ -z $1 ]] || [ $1 <= 1 ]; then
+if [[ -n ${1} ]] || [ ${1} <= 1 ]; then
     echo "ERROR: Number not provided "
     exit 1
 else
-    echo "$1 is not prime"
+    echo "${1} is not prime"
     exit 1
 fi
 
