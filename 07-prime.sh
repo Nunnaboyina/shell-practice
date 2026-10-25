@@ -23,7 +23,7 @@ if [ $1 = 2 ]; then
 fi
 
 if [ $(($1 % 2)) -eq 0 ] || [ $(($1 % 3)) -eq 0 ] || [ $(($1 % 5)) -eq 0 ] || [ $(($1 % 7)) -eq 0 ]; then
-     echo "$1 is prime"
-else 
      echo "$1 is not prime"
+else 
+     echo "$1 is prime"
 fi
