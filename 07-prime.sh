@@ -5,22 +5,22 @@
 # Checks whether the number is a prime number or not
 # Prints the result
 
-number=$1
-if [[ -z $number ]] || [ $number <= 1 ]; then
+
+if [[ -z $1 ]] || [ $1 <= 1 ]; then
     echo "ERROR: Number not provided "
     exit 1
 else
-    echo "$number is not prime"
+    echo "$1 is not prime"
     exit 1
 fi
 
-if [ $number = 2 ]; then 
-    echo "$number is prime"
+if [ $1 = 2 ]; then 
+    echo "$1 is prime"
     exit 0
 fi
 
-if [ $(($number % 2)) -eq 0 ] || [ $(($number % 3)) -eq 0 ] || [ $(($number % 5)) -eq 0 ] || [ $(($number % 7)) -eq 0 ]; then
-     echo "$number is prime"
+if [ $(($1 % 2)) -eq 0 ] || [ $(($1 % 3)) -eq 0 ] || [ $(($1 % 5)) -eq 0 ] || [ $(($1 % 7)) -eq 0 ]; then
+     echo "$1 is prime"
 else 
-     echo "$number is not prime"
+     echo "$1 is not prime"
 fi
