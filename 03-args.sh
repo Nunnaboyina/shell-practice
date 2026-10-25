@@ -14,5 +14,5 @@
 
 echo "User $1 is from $2"
 echo "Number od arguments: $# "
-echo "All arguments: $*"
+echo "All arguments: $@"
 echo "Script name: $0 "
