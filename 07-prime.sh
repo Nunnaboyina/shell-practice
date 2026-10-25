@@ -9,6 +9,8 @@ number=$1
 if [ -z $number ] || [ $number <= 1 ]; then
     echo "ERROR: Number not provided "
     exit 1
+else
+    echo "$number is not prime"
 fi
 
 if [ $number = 2 ]; then 
