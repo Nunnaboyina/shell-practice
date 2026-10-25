@@ -24,5 +24,5 @@ echo "Home : $HOME"
 echo "Script PID : $$"
 echo "Background PID : $!"
 echo "Random number : $LINENO "
-sleep & 10
+sleep 10 &
 echo "Script ran in $SECONDS seconds"
