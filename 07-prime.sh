@@ -6,7 +6,7 @@
 # Prints the result
 
 number=$1
-if [ -z $number ] || [ $number <= 1 ]; then
+if [[ -z $number ]] || [ $number <= 1 ]; then
     echo "ERROR: Number not provided "
     exit 1
 else
