@@ -13,7 +13,6 @@ if [[ -z ${1} ]]; then
 fi
 
 if [ ${1} <= 1 ]; then
-else
     echo "${1} is not prime"
     exit 1
 fi
